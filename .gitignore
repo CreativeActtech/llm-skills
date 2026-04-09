@@ -1,4 +1,6 @@
-# Community and Documentation Files
-CODE_OF_CONDUCT.md
-CONTRIBUTING.md
-SECURITY.md
+# Examples 1:
+skills/api-integration/SKILL.md
+skills/email-drafter/SKILL.md
+skills/meeting-notes/SKILL.md
+skills/security-audit/SKILL.md
+skills/sql-query-builder/SKILL.md
