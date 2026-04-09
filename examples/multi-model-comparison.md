@@ -10,6 +10,7 @@ The same `SKILL.md` behaves differently across models. Use this guide to calibra
 | **Mistral/Llama (local UIs)** | Highly deterministic with tight prompts | Lower schema compliance, limited tool awareness | Simplify workflow to 3 steps max; provide exact code fallbacks |
 
 ## Cross-Model Testing Template
+
 Run this prompt after pasting any `SKILL.md`:
 
 ```text
