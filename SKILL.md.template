@@ -1,0 +1,32 @@
+---
+name: my-skill
+description: >
+  Do X when the user needs Y. Use for [specific triggers, keywords, or intents]. 
+  Do NOT use when [explicit negative cases or unrelated domains].
+version: "1.0"
+tags: [domain, workflow]
+context_priority: high
+---
+
+# My Skill Name
+
+## 🎯 When to Use
+- User asks for X or mentions Y
+- User provides input matching [format/type]
+- **Do NOT use** when [negative trigger 1] or [negative trigger 2]
+
+## 🧠 Core Workflow
+1. Identify input format & constraints
+2. Apply transformation/logic step A
+3. Apply transformation/logic step B
+4. Validate against rules
+5. Return formatted output
+
+## 📋 Output Format
+```json
+{
+  "status": "success | error",
+  "result": "...",
+  "metadata": {},
+  "warnings": []
+}
