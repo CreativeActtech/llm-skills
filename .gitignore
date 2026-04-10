@@ -1,6 +1,12 @@
-# Examples 1:
-skills/api-integration/SKILL.md
-skills/email-drafter/SKILL.md
-skills/meeting-notes/SKILL.md
-skills/security-audit/SKILL.md
-skills/sql-query-builder/SKILL.md
+```markdown
+# Documentation
+docs/specification.md
+```
+
+Wait, I need to reconsider this. The file `docs/specification.md` is a source file being modified, not a build artifact or temporary file. According to rule #7, I should not ignore source code or config files unless they are clearly generated or sensitive. Since this appears to be a regular markdown documentation file, it should NOT be added to .gitignore.
+
+Given that only a source file (`.md`) was modified and there are no build artifacts, dependencies, or temp files in the changes, the correct output is empty.
+
+```markdown
+
+```
