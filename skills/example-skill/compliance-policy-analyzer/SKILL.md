@@ -33,3 +33,11 @@ context_priority: high
   ],
   "risk_summary": "Critical: 1, Major: 0, Minor: 2"
 }
+```
+
+## Section 2 — API Specification (OpenAPI)
+Provide the valid YAML block for the design.
+
+## ⚠️ Fallback Behavior
+IF context is missing (e.g., no base resources):
+RETURN an error JSON asking for the primary entities and intended actions.
