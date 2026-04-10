@@ -1,43 +1,61 @@
 ---
-name: compliance-policy-analyzer
-description: Audits text or procedural descriptions for regulatory compliance. Use when users ask to check if a data handling process meets GDPR, SOC2, or internal security policies.
+name: compliance-policy-auditor
+description: >
+  Audit corporate policies or data-handling descriptions against regulatory 
+  frameworks (GDPR, SOC2, HIPAA). Use when users need to identify compliance 
+  gaps or risk levels in technical procedures.
 version: "1.0"
-tags: [legal, compliance, audit, security]
+tags: [legal, compliance, audit, security, risk]
 context_priority: high
 ---
-
-# Compliance Policy Analyzer
+# Compliance Policy Auditor
+Systematically reviews technical or procedural documentation to identify 
+alignment or deviations from major regulatory frameworks.
 
 ## 🎯 When to Use
-- User provides a draft policy or "How we handle data" description.
-- User asks: "Does this process violate GDPR?" or "What are the gaps for SOC2?"
-- **Do NOT use** for providing actual legal advice or drafting binding contracts.
+- User provides a "Privacy Policy" or "Data Retention Plan" for review.
+- User asks: "Is this process SOC2 compliant?" or "What GDPR risks exist here?"
+- **Do NOT use** for providing binding legal advice or drafting contracts.
+- **Do NOT use** for auditing physical security (cams, locks) unless documented.
 
 ## 🧠 Core Workflow
-1. **Select Framework:** IF user specifies (GDPR/SOC2/HIPAA), use that; ELSE, use General Enterprise Security Standards.
-2. **Detect PII:** Identify if Personal Identifiable Information is mentioned.
-3. **Gap Analysis:** Compare input against mandatory controls (e.g., Data Encryption, Right to Erasure).
-4. **Risk Scoring:** Assign "Low", "Medium", or "High" to identified gaps.
+**Step 1 — Scope & Framework Selection**
+IF user specifies a framework (GDPR/SOC2/HIPAA/ISO27001), prioritize its rules; 
+ELSE, apply General Data Protection principles.
+
+**Step 2 — Data Mapping**
+Identify PII (Personally Identifiable Information), PHI (Protected Health 
+Information), or PCI data mentioned in the text.
+
+**Step 3 — Gap Analysis**
+1. **Data Minimization** — Check if only necessary data is collected.
+2. **Access Control** — Audit description of "Who has access" (RBAC).
+3. **Security Measures** — Identify encryption, hashing, and log requirements.
+
+**Step 4 — Risk Scoring**
+Assign Severity (Critical/Major/Minor) to gaps based on regulatory fine potential.
+
+**Step 5 — Return Output**
+Provide a structured JSON audit report.
 
 ## 📋 Output Format
 ```json
 {
-  "framework_applied": "GDPR",
+  "frameworks_evaluated": ["GDPR", "SOC2"],
+  "pii_detected": ["email", "IP address"],
   "findings": [
     {
-      "control": "Data Minimization",
-      "status": "non-compliant",
-      "evidence": "Prompt mentions storing user passwords in plain text logs.",
-      "remediation": "Implement hashing with salt and reduce log retention."
+      "severity": "critical",
+      "category": "Data Retention",
+      "issue": "Policy states data is kept indefinitely.",
+      "remediation": "Define a 7-year purge cycle per Article 5(1)(e)."
     }
   ],
-  "risk_summary": "Critical: 1, Major: 0, Minor: 2"
+  "risk_summary": "1 Critical Gap detected. High risk of non-compliance."
 }
 ```
 
-## Section 2 — API Specification (OpenAPI)
-Provide the valid YAML block for the design.
-
 ## ⚠️ Fallback Behavior
-IF context is missing (e.g., no base resources):
-RETURN an error JSON asking for the primary entities and intended actions.
+IF the input text is too vague to audit:
+
+ASK for specific details regarding data storage, user consent, or encryption
