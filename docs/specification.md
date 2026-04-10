@@ -341,22 +341,6 @@ Remove generic knowledge the model already has. Focus on:
 
 ---
 
-## Examples
-
-### Example 1: Data Cleanup
-
-See [`skills/example-skill/data-cleanup/SKILL.md`](../../skills/example-skill/data-cleanup/SKILL.md)
-
-### Example 2: Code Review
-
-See [`skills/example-skill/code-review/SKILL.md`](../../skills/example-skill/code-review/SKILL.md)
-
-### Example 3: Web Research
-
-See [`skills/example-skill/web-research/SKILL.md`](../../skills/example-skill/web-research/SKILL.md)
-
----
-
 ## Changelog
 
 | Version | Date | Changes |
