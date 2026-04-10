@@ -2,6 +2,9 @@
 
 **@ CreativeAct Technologies, 2026**
 
+<div align="center">
+  <img src="https://github.com/CreativeActtech/llm-skills/blob/main/assets/LLM-SKILLS.png" height=300 width=400>
+</div>
 ---
 
 A **model-agnostic, single-file framework** for extending browser-based LLMs with specialized capabilities. Upload or paste one `SKILL.md` into any web-based AI interface to instantly activate structured workflows, output schemas, and fallback logic.
