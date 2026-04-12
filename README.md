@@ -13,6 +13,10 @@ A **model-agnostic, single-file framework** for extending browser-based LLMs wit
 
 ## 🎯 Why Single-File?
 
+<div align="center">
+  <img src="https://github.com/CreativeActtech/llm-skills/blob/main/assets/browser_bottleneck_.png" height=400 width=450>
+</div>
+
 Traditional agent skill systems rely on multi-file directories, progressive disclosure, and CLI-based execution. Browser LLMs operate differently:
 
 - 📥 **No file system access**: Everything must be self-contained in one `SKILL.md`
