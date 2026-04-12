@@ -65,6 +65,12 @@ python tooling/count-tokens.py skills/data-cleanup/SKILL.md
 
 <br>
 
+## Deployment
+
+<div center="align">
+  <img src="https://github.com/CreativeActtech/llm-skills/blob/main/assets/deploying_a_skill.jpg" height=400 width=600>
+</div>
+
 ## 🤝 Contributing
 
 1. Fork the repo
