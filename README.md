@@ -11,6 +11,8 @@ A **model-agnostic, single-file framework** for extending browser-based LLMs wit
 
 > ✨ **Zero dependencies. Zero setup. Just Markdown.**
 
+<br>
+
 ## 🎯 Why Single-File?
 
 <div align="center">
@@ -26,7 +28,16 @@ Traditional agent skill systems rely on multi-file directories, progressive disc
 
 This framework adapts the [Agent Skills specification](https://agentskills.io) for **direct browser upload**, enforcing context efficiency and cross-model compatibility.
 
-## 📐 SKILL.md Structure (Single-File Optimized)
+<br>
+
+## 📐 SKILL.md Structure
+
+<div align="center">
+  <img src="https://github.com/CreativeActtech/llm-skills/blob/main/assets/skill_anatomy_.png" height=400 width=450>
+  <h4><b>SKILL.md Anatomy</b></h4>
+</div>
+
+<br>
 
 ```yaml
 ---
@@ -37,6 +48,8 @@ tags: [domain, workflow]        # optional
 context_priority: high          # optional: high|medium|low
 ---
 ```
+
+<br>
 
 ## 🛠️ Quickstart
 
@@ -74,6 +87,8 @@ python tooling/count-tokens.py skills/data-cleanup/SKILL.md
 <div center="align">
   <img src="https://github.com/CreativeActtech/llm-skills/blob/main/assets/deploying_a_skill.jpg" height=400 width=600>
 </div>
+
+<br>
 
 ## 🤝 Contributing
 
