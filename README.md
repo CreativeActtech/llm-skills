@@ -3,7 +3,7 @@
 **@ CreativeAct Technologies, 2026**
 
 <div align="center">
-  <img src="https://github.com/CreativeActtech/llm-skills/blob/main/assets/LLM-SKILLS.png" height=300 width=400>
+  <img src="https://github.com/CreativeActtech/llm-skills/blob/main/assets/llm-skills-intro.png" height=300 width=400>
 </div>
 ---
 
